@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, #A845AF, #F44299);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  background-color: #fff;
+  width: 450px;
+  padding: 25px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form h1 {
+  text-transform: capitalize;
+  margin-bottom: 25px;
+}
+
+.tabs {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.tabs * {
+ width: 50%;
+}
+
+.tabs *:last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: none;
+}
+
+.btn {
+  width: 100%;
+  height: 55px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-image: linear-gradient(to right, #A845AF, #F44299);
+  color: #fff;
+  transition: all 0.25s;
+}
+
+.btn-primary:hover {
+  background-image: none;
+  background-color: #A845AF;
+}
+
+.btn-primary:active {
+  background-image: none;
+  background-color: #F44299;
+}
+
+.btn-secondary {
+  border: 2px solid #ebebeb;
+  background-color: #fff;
+  transition: all 0.2s;
+}
+
+.btn-secondary:hover {
+  color: #A845AF;
+}
+
+.btn-secondary:active {
+  border-color: #A845AF;
+  color: #000 ;
+}
+
+.input-wrapper {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.form-input {
+  border: 2px solid #ebebeb;
+  border-radius: 10px;
+  width: 100%;
+  height: 55px;
+  padding: 10px 20px;
+  font-size: 16px;
+  box-shadow: 0 1px #ebebeb;
+  font-weight: 500;
+  transition: all 0.15s;
+}
+
+.form-input:focus {
+  border-color: #A845AF;
+}
+
+input.form-input::placeholder {
+  text-transform: capitalize;
+  color: #b8b8b8;
+}
+
+.form-link {
+  color: transparent;
+  background-image: linear-gradient(to right bottom, #A845AF, #F44299);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 14px;
+  align-self: flex-start;
+  margin-bottom: 20px;
+}
+
+.form-info {
+  margin-top: 20px;
+}
